@@ -14,7 +14,7 @@
             <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light" style="overflow: auto; white-space: nowrap;">
             <a class="navbar-brand" href="/index.html">
                 <img src="../images/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg" width="30" height="30s" class="d-inline-block align-top" alt="" loading="lazy">
                 Chatter
@@ -22,16 +22,15 @@
 
             <div>
                 <a class="nav-link" href="./demo.html">Demo</a>
-                <a class="nav-link" href="#">Contact</a>
-                <a class="nav-link" href="#">Waitlist</a>
+                <a class="nav-link" href="#contact_us">Contact</a>
             </div>
             
         </nav>
         <div>
             <section class="diagonal-section bg-contrast-lower">
                 <div class="container max-width-adaptive-sm padding-y-xxl">
-                <div class="text-center">
-                    <div class="text-sm opacity-60% margin-bottom-xxs">did you hear?</div>
+                <div class="text-center" style="margin-top: 10%;">
+                    <div class="text-sm opacity-60% margin-top-10% margin-bottom-xxs">did you hear?</div>
             
                     <div class="text-component margin-bottom-sm">
                     <h1>Ad free social media</h1>
@@ -50,22 +49,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <div class="card border-white mb-3" style="max-width: 30rem; height: 20rem;">
-                        <div class="card-header">Header</div>
+                    <div class="card border-white mb-3" style="max-width: 30rem; height: 20rem; text-align: center;">
+                        <div class="card-header">People First</div>
                         <div class="card-body">
-                            <h5 class="card-title">Dark card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                            <h5 class="card-title">Your Info, All Yours</h5>
+                            <p class="card-text">Don't let people sell your info, especially if its of no use for you.</p>
+                        <button type="button" class="btn btn-outline-dark btn-block">Learn More</button>
                         </div>
                     </div>
             </div>
             <div class="col-sm">
-                <div class="card border-white mb-3" style="max-width: 30rem; height: 20rem;">
-                    <div class="card-header">Header</div>
+                <div class="card border-white mb-3" style="max-width: 30rem; height: 20rem; text-align: center;">
+                    <div class="card-header">Browse Freely</div>
                     <div class="card-body">
-                        <h5 class="card-title">Dark card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-dark btn-block">Dark</button>
+                        <h5 class="card-title">Ad Free Mindset</h5>
+                        <p class="card-text">50 cents a month and commitment free. Chatter is a judgement free zone</p>
+                        <button type="button" class="btn btn-outline-dark btn-block">Get Started</button>
                     </div>
                 </div>
             </div>
@@ -73,7 +72,7 @@
 
         <div>
             <section  style="display: flex; padding: 5%; justify-content: space-around;">
-                <h1>Extroverted Introverts Unite!</h1>
+                <h1>Less time spent on useless ads</h1>
                 <div class="flex flex-wrap flex-center gap-sm">
                     <button class="btn btn-outline-dark ">
                         <a href="#0" >Download</a>
@@ -87,10 +86,32 @@
         </div>
         <img src="./images/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg" class="img-fluid" alt="Responsive image">
         <div>
-            
+            <div id="contact_us" class="card-header" style="margin-top: 5%; font-size: xx-large; justify-items: center; text-align: center; margin-bottom: 5%;">Contact Us!</div>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">First Name</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Last Name</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Subject</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Message</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="How Can We Help You?">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
         <footer>
-            <ul class="nav justify-content-end">
+            <ul class="nav " style="justify-content: space-evenly; margin-top: 10%; background-color: black; color: cadetblue;">
                 <li class="nav-item">
                     <p>Careers</p>
                 </li>
